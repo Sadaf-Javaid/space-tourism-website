@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  html,
+  body {
+    @apply overflow-hidden;
+  }
+} */
+
+@layer components {
+  .mobile-nav-styling {
+    @apply py-8 pl-8 top-0 right-0 h-full w-[67%] fixed z-40 transform transition-transform delay-200 duration-300 md:hidden backdrop-blur-nav text-white;
+  }
+
+  .navNumbers-styling {
+    @apply font-barlow-condensed font-bold text-base mr-3 tracking-nav-number;
+  }
+
+  .navText-styling {
+    @apply tracking-nav-text font-barlow-condensed md:py-[38.5px] font-normal text-base cursor-pointer relative;
+  }
+
+  /* Active state for the mobile view */
+  .navText-styling.active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%; /* Full height for the vertical line in mobile */
+    width: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+
+  /* Active state for the larger screens (md and lg) */
+  @media (min-width: 768px) {
+    .navText-styling.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px; /* Line height of 3px */
+      width: 100%; /* Full width */
+      background-color: white;
+      transition: all 0.3s ease;
+    }
+  }
+}
