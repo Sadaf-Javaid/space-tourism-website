@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center bg-mobileBackground bg-cover bg-center md:bg-tabletBackground lg:bg-desktopBackground">
+    <div className="flex min-h-screen flex-col items-center bg-homeMobileBackground bg-cover bg-center md:bg-homeTabletBackground lg:bg-homeDesktopBackground">
       <Navbar />
       <main className="flex flex-grow flex-col p-6 text-center md:px-10 md:py-32 lg:justify-end">
         {/* content wrapper */}
