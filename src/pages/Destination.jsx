@@ -8,11 +8,14 @@ export default function Destination() {
       <Navbar />
       <main className="flex-col p-6">
         {/* Picture section */}
-        <div className="flex flex-col items-center justify-center gap-6">
-          <p className="text-white">
-            <span>01</span>PICK YOUR DESTINATION
+        <div className="mb-8 flex flex-grow flex-col items-center justify-center space-y-6">
+          <p className="font-base font-barlow-condensed tracking-[0.15rem] text-white">
+            <span className="mr-6 text-blue-200">01</span>
+            PICK YOUR DESTINATION
           </p>
-          <img src={imageMoon} />
+          <div className="px-[5.25rem] py-[1.65rem]">
+            <img src={imageMoon} width={150} height={150} />
+          </div>
         </div>
 
         {/* Tabs section */}

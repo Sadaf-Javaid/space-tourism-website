@@ -59,7 +59,7 @@ export default function Tabs() {
           <button
             key={tab.id}
             onClick={() => setActiveTab(index)}
-            className={`pb-3.5 font-barlow-condensed text-base uppercase tracking-[0.13125rem] transition-colors duration-200 ${activeTab === index ? "border-b-[3px] border-white text-white" : "text-blue-300 hover:border-b-[3px] hover:border-[#FFFFFF80] hover:text-white"}`}
+            className={`pb-3.5 font-barlow-condensed text-base uppercase tracking-[0.13125rem] transition-colors duration-200 ${activeTab === index ? "border-b-[3px] border-white text-white" : "text-blue-200 hover:border-b-[3px] hover:border-[#FFFFFF80] hover:text-white"}`}
           >
             {tab.label}
           </button>
@@ -67,16 +67,16 @@ export default function Tabs() {
       </div>
 
       {/* Content section */}
-      <div className="mt-6">
+      <div>
         {tabsData.map(
           (tab, index) =>
             activeTab === index && (
               <TabContent
                 key={tab.id}
-                title={tab.data.title}
-                description={tab.data.description}
-                distance={tab.data.distance}
-                travelTime={tab.data.travelTime}
+                title={tab.content.title}
+                description={tab.content.description}
+                distance={tab.content.distance}
+                travelTime={tab.content.travelTime}
               />
             ),
         )}
