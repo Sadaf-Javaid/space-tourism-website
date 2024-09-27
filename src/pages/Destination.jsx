@@ -63,20 +63,23 @@ export default function Destination() {
   return (
     <div className="flex min-h-screen flex-col bg-destinationMobileBackground bg-cover bg-center bg-no-repeat md:bg-destinationTabletBackground lg:bg-destinationDesktopBackground">
       <Navbar />
-      <main className="flex-col p-6">
+      <main className="flex flex-col items-center flex-grow p-6 md:p-10 lg:max-w-[1120px] lg:flex-row lg:items-center lg:justify-between lg:gap-14 lg:self-center lg:px-16 lg:py-12">
         {/* Picture section */}
-        <div className="mb-8 flex flex-grow flex-col items-center justify-center space-y-6">
-          <p className="font-base font-barlow-condensed tracking-[0.15rem] text-white">
+        <div className="mb-8 flex w-full flex-grow flex-col items-center justify-center space-y-6 lg:mb-0">
+          <p className="font-base md:font-xl font-barlow-condensed tracking-[0.15rem] text-white md:self-start">
             <span className="mr-6 text-blue-200">01</span>
             PICK YOUR DESTINATION
           </p>
-          <div className="px-[5.25rem] py-[1.65rem]">
-            <img src={tabsData[activeTab].image} width={150} height={150} />
+          <div className="px-[5.25rem] py-[1.65rem] lg:px-0 lg:py-0">
+            <img
+              src={tabsData[activeTab].image}
+              className="h-[9.375rem] w-[9.375rem] min-w-[9.375rem] max-w-full object-contain md:h-[18.75rem] md:w-[18.75rem] lg:h-[30rem] lg:w-[30rem]"
+            />
           </div>
         </div>
 
         {/* Tabs section */}
-        <div>
+        <div className="flex max-w-[514px] flex-col lg:items-start">
           {/* Buttons section */}
           <div className="flex items-center justify-center space-x-8">
             {tabsData.map((tab, index) => (
