@@ -5,27 +5,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  html,
-  body {
-    @apply overflow-hidden;
-  }
-} */
-
 @layer components {
   .mobile-nav-styling {
-    @apply py-8 pl-8 top-0 right-0 h-full w-[67%] fixed z-40 transform transition-transform delay-200 duration-300 md:hidden backdrop-blur-nav text-white;
+    @apply fixed right-0 top-0 z-40 h-full w-[67%] transform py-8 pl-8 text-white backdrop-blur-nav transition-transform delay-200 duration-300 md:hidden;
   }
 
   .navNumbers-styling {
-    @apply font-barlow-condensed font-bold text-base mr-3 tracking-nav-number;
+    @apply mr-3 font-barlow-condensed text-base font-bold tracking-nav-number;
   }
 
   .navText-styling {
-    @apply tracking-nav-text font-barlow-condensed md:py-[38.5px] font-normal text-base cursor-pointer relative;
+    @apply relative cursor-pointer font-barlow-condensed text-base font-normal tracking-nav-text md:py-[38.5px];
   }
 
-  /* Active state for the mobile view */
+  /* Active state for mobile view */
   .navText-styling.active::after {
     content: "";
     position: absolute;
@@ -37,17 +30,35 @@
     transition: all 0.3s ease;
   }
 
-  /* Active state for the larger screens (md and lg) */
+  /* Active state for larger screens */
   @media (min-width: 768px) {
     .navText-styling.active::after {
       content: "";
       position: absolute;
       left: 0;
       bottom: 0;
-      height: 3px; /* Line height of 3px */
-      width: 100%; /* Full width */
+      height: 3px;
+      width: 100%;
       background-color: white;
       transition: all 0.3s ease;
+    }
+
+    /* Hover effect for tablet and desktop */
+    .navText-styling:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 0; /* Start with 0 width */
+      background-color: white;
+      opacity: 0.5; /* 50% opacity on hover */
+      transition: all 0.3s ease; /* Smooth transition */
+    }
+
+    /* Animate width from 0 to 100% on hover */
+    .navText-styling:hover::after {
+      width: 100%; /* Expand the line from 0 to 100% */
     }
   }
 }
