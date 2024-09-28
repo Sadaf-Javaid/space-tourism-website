@@ -61,4 +61,25 @@
       width: 100%; /* Expand the line from 0 to 100% */
     }
   }
+  .explore-button {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .explore-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    transform: translate(-50%, -50%) scale(0); /* Initially hidden */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+
+  .explore-button:hover::before {
+    transform: translate(-50%, -50%) scale(1); /* Show the transparent circle on hover */
+  }
 }

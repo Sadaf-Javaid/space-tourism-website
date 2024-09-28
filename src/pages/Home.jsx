@@ -25,7 +25,7 @@ export default function Home() {
 
           {/* button section */}
           <div className="flex flex-grow items-center justify-center md:mt-12">
-            <button className="h-36 w-36 cursor-pointer rounded-full bg-white font-bellefair text-2xl font-normal text-blue-900 md:h-[12.5rem] md:w-[12.5rem] md:text-3xl lg:h-[17rem] lg:w-[17rem] lg:text-4xl">
+            <button className="explore-button h-36 w-36 cursor-pointer rounded-full bg-white font-bellefair text-2xl font-normal text-blue-900 hover:text-[#85868B] md:h-[12.5rem] md:w-[12.5rem] md:text-3xl lg:h-[17rem] lg:w-[17rem] lg:text-4xl">
               Explore
             </button>
           </div>
