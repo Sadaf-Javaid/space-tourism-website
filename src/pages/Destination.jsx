@@ -4,7 +4,7 @@ import imageMoon from "../assets/destination/image-moon.png";
 import imageTitan from "../assets/destination/image-titan.png";
 import imageMars from "../assets/destination/image-mars.png";
 import imageEuropa from "../assets/destination/image-europa.png";
-import TabContent from "../components/TabContent/";
+import DestinationTabs from "../components/DestinationTabs";
 
 export default function Destination() {
   const [activeTab, setActiveTab] = useState(0);
@@ -98,7 +98,7 @@ export default function Destination() {
             {tabsData.map(
               (tab, index) =>
                 activeTab === index && (
-                  <TabContent
+                  <DestinationTabs
                     key={tab.id}
                     title={tab.content.title}
                     description={tab.content.description}

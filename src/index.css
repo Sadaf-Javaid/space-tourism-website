@@ -18,16 +18,26 @@
     @apply relative cursor-pointer font-barlow-condensed text-base font-normal tracking-nav-text md:py-[38.5px];
   }
 
-  /* Active state for mobile view */
   .navText-styling.active::after {
     content: "";
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 100%; /* Full height for the vertical line in mobile */
+    height: 100%;
     width: 3px;
     background-color: white;
     transition: all 0.3s ease;
+  }
+
+  .embla {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
   }
 
   /* Active state for larger screens */
@@ -50,10 +60,10 @@
       left: 0;
       bottom: 0;
       height: 3px;
-      width: 0; /* Start with 0 width */
+      width: 0;
       background-color: white;
-      opacity: 0.5; /* 50% opacity on hover */
-      transition: all 0.3s ease; /* Smooth transition */
+      opacity: 0.5;
+      transition: all 0.3s ease;
     }
 
     /* Animate width from 0 to 100% on hover */

@@ -1,4 +1,4 @@
-export default function TabContent({
+export default function DestinationTabs({
   title,
   description,
   distance,
