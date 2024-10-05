@@ -11,29 +11,29 @@ export default {
       },
       backgroundImage: {
         homeMobileBackground:
-          "url('./src/assets/home/background-home-mobile.jpg')",
+          "url('/home/background-home-mobile.jpg')",
         homeTabletBackground:
-          "url('./src/assets/home/background-home-tablet.jpg')",
+          "url('/home/background-home-tablet.jpg')",
         homeDesktopBackground:
-          "url('./src/assets/home/background-home-desktop.jpg')",
+          "url('/home/background-home-desktop.jpg')",
         destinationMobileBackground:
-          "url('./src/assets/destination/background-destination-mobile.jpg')",
+          "url('/destination/background-destination-mobile.jpg')",
         destinationTabletBackground:
-          "url('./src/assets/destination/background-destination-tablet.jpg')",
+          "url('/destination/background-destination-tablet.jpg')",
         destinationDesktopBackground:
-          "url('./src/assets/destination/background-destination-desktop.jpg')",
+          "url('/destination/background-destination-desktop.jpg')",
         crewMobileBackground:
-          "url('./src/assets/crew/background-crew-mobile.jpg')",
+          "url('/crew/background-crew-mobile.jpg')",
         crewTabletBackground:
-          "url('./src/assets/crew/background-crew-tablet.jpg')",
+          "url('/crew/background-crew-tablet.jpg')",
         crewDesktopBackground:
-          "url('./src/assets/crew/background-crew-desktop.jpg')",
+          "url('/crew/background-crew-desktop.jpg')",
         technologyMobileBackground:
-          "url('./src/assets/technology/background-technology-mobile.jpg')",
+          "url('/technology/background-technology-mobile.jpg')",
         technologyTabletBackground:
-          "url('./src/assets/technology/background-technology-tablet.jpg')",
+          "url('/technology/background-technology-tablet.jpg')",
         technologyDesktopBackground:
-          "url('./src/assets/technology/background-technology-desktop.jpg')",
+          "url('/technology/background-technology-desktop.jpg')",
       },
       letterSpacing: {
         "nav-number": "0.168rem",

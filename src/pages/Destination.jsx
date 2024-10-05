@@ -1,9 +1,9 @@
 import Navbar from "../components/Navbar";
 import { useState } from "react";
-import imageMoon from "../assets/destination/image-moon.png";
-import imageTitan from "../assets/destination/image-titan.png";
-import imageMars from "../assets/destination/image-mars.png";
-import imageEuropa from "../assets/destination/image-europa.png";
+import imageMoon from "/destination/image-moon.png";
+import imageTitan from "/destination/image-titan.png";
+import imageMars from "/destination/image-mars.png";
+import imageEuropa from "/destination/image-europa.png";
 import DestinationTabs from "../components/DestinationTabs";
 
 export default function Destination() {

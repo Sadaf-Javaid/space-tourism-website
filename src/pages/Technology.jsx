@@ -1,11 +1,11 @@
 import Navbar from "../components/Navbar";
-import spaceportPortrait from "../assets/technology/image-spaceport-portrait.jpg";
-import spaceportLandscape from "../assets/technology/image-spaceport-landscape.jpg";
-import launchVehiclePortrait from "../assets/technology/image-launch-vehicle-portrait.jpg";
-import launchVehicleLandscape from "../assets/technology/image-launch-vehicle-landscape.jpg";
-import spaceCapsulePortrait from "../assets/technology/image-space-capsule-portrait.jpg";
-import spaceCapsuleLandscape from "../assets/technology/image-space-capsule-landscape.jpg";
 import { useState } from "react";
+import spaceportPortrait from "/technology/image-spaceport-portrait.jpg";
+import spaceportLandscape from "/technology/image-spaceport-landscape.jpg";
+import launchVehiclePortrait from "/technology/image-launch-vehicle-portrait.jpg";
+import launchVehicleLandscape from "/technology/image-launch-vehicle-landscape.jpg";
+import spaceCapsulePortrait from "/technology/image-space-capsule-portrait.jpg";
+import spaceCapsuleLandscape from "/technology/image-space-capsule-landscape.jpg";
 
 export default function Technology() {
   const [activeTab, setActiveTab] = useState(0);
@@ -66,7 +66,7 @@ export default function Technology() {
           </div>
 
           {/* Tabs Start Here */}
-          <div className="mt-8 flex flex-col gap-10 px-6 pb-12 md:px-10 md:pb-10 lg:mt-0 lg:flex-row lg:gap-8 lg:px-0 lg:pb-0 lg:items-center">
+          <div className="mt-8 flex flex-col gap-10 px-6 pb-12 md:px-10 md:pb-10 lg:mt-0 lg:flex-row lg:items-center lg:gap-8 lg:px-0 lg:pb-0">
             {/* Tab Buttons */}
             <div className="flex items-center justify-center space-x-4 lg:flex-col lg:items-start lg:space-x-0 lg:space-y-8">
               {technologyData.map((technology, index) => (
@@ -85,11 +85,11 @@ export default function Technology() {
               {technologyData.map(
                 (technology, index) =>
                   activeTab === index && (
-                    <div className="flex max-w-[600px] flex-col items-center justify-center space-y-4 lg:space-y-8 text-center text-white lg:items-start lg:justify-start lg:text-left">
+                    <div className="flex max-w-[600px] flex-col items-center justify-center space-y-4 text-center text-white lg:items-start lg:justify-start lg:space-y-8 lg:text-left">
                       <h3 className="font-bellefair text-lg uppercase text-[#8A8990] md:text-2xl lg:text-[2rem]">
                         THE TERMINOLOGY…
                       </h3>
-                      <h2 className="font-bellefair text-2xl text-white md:text-[2.5rem] lg:text-[3.5rem]leading-snug">
+                      <h2 className="lg:text-[3.5rem]leading-snug font-bellefair text-2xl text-white md:text-[2.5rem]">
                         {technology.term}
                       </h2>
                       <p className="font-barlow text-base leading-7 text-blue-200 lg:text-lg">

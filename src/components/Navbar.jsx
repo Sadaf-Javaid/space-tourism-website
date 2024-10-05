@@ -1,6 +1,6 @@
-import hamburgerIcon from "../assets/shared/icon-hamburger.svg";
-import closeIcon from "../assets/shared/icon-close.svg";
-import logo from "../assets/shared/logo.svg";
+import hamburgerIcon from "/shared/icon-hamburger.svg";
+import closeIcon from "/shared/icon-close.svg";
+import logo from "/shared/logo.svg";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 

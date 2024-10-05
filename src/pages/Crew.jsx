@@ -1,9 +1,8 @@
-import { useState } from "react";
 import Navbar from "../components/Navbar";
-import Douglas from "../assets/crew/image-douglas-hurley.png";
-import Mark from "../assets/crew/image-mark-shuttleworth.png";
-import Victor from "../assets/crew/image-victor-glover.png";
-import Anousheh from "../assets/crew/image-anousheh-ansari.png";
+import Douglas from "/crew/image-douglas-hurley.png";
+import Mark from "/crew/image-mark-shuttleworth.png";
+import Victor from "/crew/image-victor-glover.png";
+import Anousheh from "/crew/image-anousheh-ansari.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -82,20 +81,20 @@ export default function Crew() {
           <Slider {...settings}>
             {crewMembers.map((member) => (
               <div className="flex flex-col items-center justify-center text-center">
-                <div className="mb-16 lg:mb-6 flex w-full items-center justify-center px-10 md:justify-start lg:px-0">
+                <div className="mb-16 flex w-full items-center justify-center px-10 md:justify-start lg:mb-6 lg:px-0">
                   <p className="font-base md:font-xl font-barlow-condensed tracking-[0.15rem] text-white lg:text-[1.75rem]">
                     <span className="mr-6 text-blue-200">02</span>
                     MEET YOUR CREW
                   </p>
                 </div>
 
-                <div className="flex flex-col items-center justify-center lg:flex-row space-y-8 lg:space-x-8 lg:space-y-0">
+                <div className="flex flex-col items-center justify-center space-y-8 lg:flex-row lg:space-x-8 lg:space-y-0">
                   <div className="flex flex-col items-center space-y-12 lg:mr-auto">
                     <div className="text-center lg:text-left">
                       <h3 className="font-lg mb-2 font-bellefair uppercase text-[#ffffff6b] md:mb-4 md:text-2xl lg:text-[2rem]">
                         {member.role}
                       </h3>
-                      <h2 className="lg:text-[3.5rem]leading-snug font-bellefair text-2xl uppercase text-white md:text-[3.5rem] leading-[1.2]">
+                      <h2 className="lg:text-[3.5rem]leading-snug font-bellefair text-2xl uppercase leading-[1.2] text-white md:text-[3.5rem]">
                         {member.name}
                       </h2>
                       <p className="mt-8 max-w-[512px] font-barlow text-base leading-7 text-blue-200 lg:text-lg">
