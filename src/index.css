@@ -29,15 +29,36 @@
     transition: all 0.3s ease;
   }
 
-  .embla {
-    overflow: hidden;
-  }
-  .embla__container {
+  .slick-dots {
+    padding: 0;
+    margin: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .embla__slide {
-    flex: 0 0 100%;
-    min-width: 0;
+
+  /* All dots - default state (inactive) */
+  .slick-dots li .slick-dot {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: block;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+
+  /* Active dot */
+  .slick-dots li.slick-active .slick-dot {
+    background-color: white !important; /* Active dot color */
+  }
+
+  .blend-effect {
+    width: 100%;
+    height: auto;
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
   }
 
   /* Active state for larger screens */

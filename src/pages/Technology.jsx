@@ -86,9 +86,9 @@ export default function Technology() {
                 (technology, index) =>
                   activeTab === index && (
                     <div className="flex max-w-[600px] flex-col items-center justify-center space-y-4 lg:space-y-8 text-center text-white lg:items-start lg:justify-start lg:text-left">
-                      <p className="font-bellefair text-lg uppercase text-[#8A8990] md:text-2xl lg:text-[2rem]">
+                      <h3 className="font-bellefair text-lg uppercase text-[#8A8990] md:text-2xl lg:text-[2rem]">
                         THE TERMINOLOGY…
-                      </p>
+                      </h3>
                       <h2 className="font-bellefair text-2xl text-white md:text-[2.5rem] lg:text-[3.5rem]leading-snug">
                         {technology.term}
                       </h2>
